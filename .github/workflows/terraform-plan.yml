@@ -15,6 +15,6 @@ jobs:
    - uses: actions/checkout@v3
    - uses: hashicorp/setup-terraform@v2
 
-   - run: terraform -chdir=env/dev init
-   - run: terraform -chdir=env/dev validate
-   - run: terraform -chdir=env/dev plan
+   - run: terraform -chdir=environments/dev init
+   - run: terraform -chdir=environments/dev validate
+   - run: terraform -chdir=environments/dev plan
